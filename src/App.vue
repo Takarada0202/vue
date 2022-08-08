@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <custom-hearder />
+    <router-view></router-view>
+    <h1>Main Page</h1>
+    <p>Hello world</p>
+    <hr />
+    <CustomList :Count="2" />
+    <CustomList  :Count="3" :SubTitle="'Hello world'" />
+    <CustomList  />
+    <CustomList :Title="'Title'" :Count="10" :SubTitle="'Hello world'" />
+    <CustomList  />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CustomList from './components/li-item.vue'
+import CustomHearder from './components/CustomHeader.vue'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    CustomList ,
+    CustomHearder,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
