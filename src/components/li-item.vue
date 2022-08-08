@@ -5,7 +5,7 @@
             untitled
         </p>
         <ul v-if="Count && SubTitle">
-            <li v-for="key in Count " :key="key">{{SubTitle}}</li>
+            <li v-for="key in Count " :key="key"><router-link to="/board/show">{{SubTitle}}</router-link></li>
         </ul>
   </div>
 </template>

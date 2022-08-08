@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <h1>HomePage</h1>
-    <p>Amuz Vue Study</p>
-  </div>
+    <div>
+        <h1>DetailPage</h1>
+    </div>
 </template>
 
 <script>
 export default {
-
+    
 }
 </script>
 
