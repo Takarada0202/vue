@@ -1,6 +1,8 @@
 <template>
   <div>
     <h1>Board</h1>
+    
+    
     <custom-list :Count="1" :Title="'Test1'" :SubTitle="'Hello World1'" />
     <custom-list :Count="3" :Title="'Test2'" :SubTitle="'Hello World2'" />
     <custom-list :Count="5" :Title="'Test3'" :SubTitle="'Hello World3'" />
@@ -18,7 +20,12 @@ import CustomList from "../components/li-item.vue"
 export default {
   components : {
     CustomList,
+  },
+data() {
+  return {
+    routeParams : this.$route.params
   }
+}
 }
 </script>
 
