@@ -7,7 +7,11 @@ import Board from './page/BoardPage.vue'
 import Contac from './page/ContactPage.vue'
 import DetailPage from './page/DetailPage'
 import axios from 'axios'
-import Getdata from './page/GetdataPage.vue'
+import Getdata from './page/GetData.vue'
+import UserList from './page/UserList.vue'
+import Profile from './page/ProfilePage.vue'
+
+
 
 const routes = [
     { name: 'hoem', path: '/', component: Home },
@@ -16,6 +20,8 @@ const routes = [
     { name: 'detail', path: '/board/show?', component: DetailPage },
     { name: 'contact', path: '/contac', component: Contac },
     { name: 'getdata', path: '/getdata', component: Getdata },
+    { name: 'UserList', path: '/user', component: UserList },
+    { name: 'Profile', path: '/user/:id', component: Profile },
 ]
 
 const router = createRouter({

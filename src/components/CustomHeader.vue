@@ -1,9 +1,11 @@
 <template>
   <div id="header">
-    <router-link to="home">Home</router-link>
+    <router-link to="/">Home</router-link>
     <router-link to="about">About</router-link>
     <router-link to="board">Board</router-link>
     <router-link to="contac">Contact</router-link>
+    <router-link to="getdata">Axios</router-link>
+    <router-link to="/user">UserProfile</router-link>
   </div>
 </template>
 
